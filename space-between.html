@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>The Space Between: Hush — Ida Ovreberg</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="space-between">
+        <header class="hero">
+          <div class="hero__content">
+            <a href="index.html" class="hero__button" style="margin-bottom:1rem; display:inline-block;">← Back</a>
+            <div style="max-width:900px;">
+              <h1>The Space Between: Hush</h1>
+              <p class="hero__meta">Interactive game concept · Interaction design · Narrative game design</p>
+              <p class="hero__text">The Space Between: Hush was developed as part of MIX333 – Computer Game Narrative, a master’s course at the University of Bergen focused on the relationship between game design, interaction and narrative. As part of the course, we analysed games and genres before developing our own narrative game concept.
+
+Our project explored how interaction, pacing and narrative could communicate emotional overwhelm and create an experience that encourages the player to slow down.</p>
+            </div>
+          </div>
+        </header>
+
+        <main>
+          <section class="section">
+            <div class="section__wrapper">
+              <!-- HERO VISUAL -->
+              <div style="margin: 1.5rem 0 2rem;">
+                <div style="width:100%;height:600px;overflow:hidden;border-radius:12px;box-shadow:0 18px 40px rgba(47,47,61,0.08);">
+                  <img src="images/project-the-space-between.jpg" alt="Hush: atmospheric landscape placeholder" style="width:100%;height:100%;object-fit:cover;display:block;" />
+                </div>
+              </div>
+
+              <!-- DESIGN QUESTION -->
+              <div style="margin-top:2.5rem;">
+                <div class="section__heading">
+                  <span>Design challenge</span>
+                  <h2>How can a game teach players to slow down rather than simply telling them to?</h2>
+                </div>
+                <p style="margin-top:0.75rem;color:var(--grey);max-width:68ch;">We wanted to explore how pacing and interaction could communicate emotional overwhelm without relying on explicit instructions. In Hush, the player's actions directly affect the stability of the game world, making slowing down something the player discovers through play.</p>
+              </div>
+
+              <!-- THE CONCEPT -->
+              <div style="margin-top:2.5rem;display:grid;gap:1.25rem;grid-template-columns:1fr 360px;align-items:start;">
+                <div>
+                  <div class="section__heading">
+                    <span>The concept</span>
+                    <h2>Hush is the child's imaginary friend</h2>
+                  </div>
+                  <p style="color:var(--grey);max-width:68ch;">The player takes the role of a child's imaginary friend, navigating an inner emotional world shaped by events in the child's everyday life. Emotional events in the outer world create shockwaves that affect the environment, while the player's pace determines how stable the world remains.</p>
+                  <div style="margin-top:1rem;text-align:center;">
+                    <img src="images/hush.svg" alt="Hush illustration" style="max-width:480px;width:100%;height:auto;display:inline-block;" />
+                  </div>
+                </div>
+
+                <div>
+                  <div style="background:var(--sb-box);padding:1rem;border-radius:12px;box-shadow:0 8px 24px rgba(47,47,61,0.08);border:1px solid var(--sb-box-border);">
+                    <div style="font-weight:700;color:var(--pink-light);text-transform:uppercase;letter-spacing:0.12em;font-size:0.78rem;margin-bottom:0.5rem;">Process diagram</div>
+                      <div style="font-size:0.95rem;color:var(--sb-box-text);display:flex;flex-direction:column;gap:0.35rem;align-items:flex-start;">
+                        <div style="font-weight:700;">Outer world</div>
+                        <div style="opacity:0.9;margin:6px 0;align-self:center;">↓</div>
+                        <div style="font-weight:700;">Emotional event</div>
+                        <div style="opacity:0.9;margin:6px 0;align-self:center;">↓</div>
+                        <div style="font-weight:700;">Shockwave</div>
+                        <div style="opacity:0.9;margin:6px 0;align-self:center;">↓</div>
+                        <div style="font-weight:700;">Inner world</div>
+                        <div style="opacity:0.9;margin:6px 0;align-self:center;">↓</div>
+                        <div style="font-weight:700;">Player's pace</div>
+                        <div style="opacity:0.9;margin:6px 0;align-self:center;">↓</div>
+                        <div style="font-weight:700;">Stability / instability</div>
+                      </div>
+                      
+                  </div>
+                </div>
+              </div>
+
+              <!-- CORE INTERACTION -->
+              <div style="margin-top:2.5rem;">
+                <div class="section__heading">
+                  <span>Core interaction</span>
+                  <h2>Fast vs Slow — environmental feedback</h2>
+                </div>
+
+                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-top:1rem;">
+                  <div>
+                    <div style="background:var(--sb-box);border-radius:10px;padding:1rem;border:1px solid var(--sb-box-border);">
+                      <div style="font-weight:700;color:var(--pink-light);text-transform:uppercase;font-size:0.78rem;margin-bottom:0.5rem;">FAST</div>
+                      <ul style="color:var(--sb-box-text);line-height:1.6;margin:0;padding-left:1rem;">
+                        <li>Storms become stronger</li>
+                        <li>Cracks spread across the terrain</li>
+                        <li>Landscape fragments and navigation becomes harder</li>
+                      </ul>
+                    </div>
+                    <div style="overflow:hidden;border-radius:10px;margin-top:0.75rem;box-shadow:0 18px 40px rgba(47,47,61,0.08);background:#fff;">
+                      <img src="images/hush-fast.jpg" alt="Hush - Fast" style="width:100%;height:auto;display:block;object-fit:cover;" />
+                    </div>
+                  </div>
+
+                  <div>
+                    <div style="background:var(--sb-box);border-radius:10px;padding:1rem;border:1px solid var(--sb-box-border);">
+                      <div style="font-weight:700;color:var(--pink-light);text-transform:uppercase;font-size:0.78rem;margin-bottom:0.5rem;">SLOW</div>
+                      <ul style="color:var(--sb-box-text);line-height:1.6;margin:0;padding-left:1rem;">
+                        <li>Storms calm</li>
+                        <li>Terrain reconnects</li>
+                        <li>Safe zones appear and navigation eases</li>
+                      </ul>
+                    </div>
+                    <div style="overflow:hidden;border-radius:10px;margin-top:0.75rem;box-shadow:0 18px 40px rgba(47,47,61,0.08);background:#fff;">
+                      <img src="images/hush-slow.jpg" alt="Hush - Slow" style="width:100%;height:auto;display:block;object-fit:cover;" />
+                    </div>
+                  </div>
+                </div>
+
+                <div style="margin-top:0.75rem;text-align:center;max-width:760px;margin:0 auto;color:var(--grey);font-size:0.95rem;">
+                  <strong>Visual concept:</strong> These images were generated with Google Gemini to visualise how the environment could change between fast and slow player movement. They represent the intended visual direction rather than final game assets.
+                </div>
+
+                <p style="margin-top:1rem;color:var(--grey);max-width:68ch;">The volatility system is hidden — there is no stability meter or explicit indication of how the player is performing. Instead, the environment acts as feedback. Moving too quickly causes the world to become increasingly unstable, with stronger storms, spreading cracks and fragmented terrain. Slowing down has the opposite effect: the storm calms, the terrain reconnects and safe areas gradually appear.
+
+This makes the player's pace an important part of the interaction. Rather than being told to slow down, players learn through the changing environment that careful and deliberate movement creates a more stable world.</p>
+              </div>
+
+              <!-- PLAYER EXPERIENCE -->
+              <div style="margin-top:2.5rem;">
+                <div class="section__heading">
+                  <span>Player experience</span>
+                  <h2>Discovering care through interaction</h2>
+                </div>
+                <p style="color:var(--grey);max-width:68ch;">Players gradually discover that their movement influences the world. Moving too quickly increases instability, while slowing down helps the environment recover. Rather than using explicit instructions, the game teaches players through environmental feedback, encouraging careful and deliberate movement.</p>
+              </div>
+
+              
+
+              <!-- DESIGN TAKEAWAYS -->
+              <div style="margin-top:2.5rem;">
+                <div class="section__heading">
+                  <span>Design takeaways</span>
+                  <h2>Key lessons</h2>
+                </div>
+                <ul style="margin-top:0.8rem;color:var(--text);line-height:1.8;">
+                  <li><strong>Interaction can communicate emotions: </strong> Rather than explaining emotional overwhelm through dialogue, we explored how pacing and environmental changes could make the player experience it.</li>
+                  <li><strong>Systems can teach without explicit instruction:</strong> The volatility mechanic was designed to let players discover the relationship between their movement and the stability of the world.</li>
+                  <li><strong>Concept development comes before implementation</strong> The project showed the value of defining the core interaction and player experience before moving toward a full game prototype..</li>
+                  <li><strong>Dependence → independence (progression through pacing):</strong> Players learn to rely on their own judgment and pacing to navigate the world effectively.</li>
+                </ul>
+                <p style="margin-top:1rem;color:var(--grey);font-weight:600;">The mechanic is simple: rushing makes the world harder. Slowing down gives it space to recover.</p>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <footer class="footer">
+          <p>Designed by Ida Ovreberg • Media design student</p>
+        </footer>
+      </body>
+    </html>

@@ -1,46 +1,192 @@
 <!DOCTYPE html>
-<html lang="no">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Min portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ida Ovreberg | Media Design Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="projects">
+    <header class="hero">
+      <div class="hero__content">
+        <div class="hero__grid">
+          <div class="hero__copy">
+            <p class="eyebrow">Hi, I'm Ida Øvreberg</p>
+            <h1>Designing digital experiences<br />with creativity &amp; technology.</h1>
+            <p class="hero__meta">UI/UX · WEB DEVELOPMENT · DIGITAL SYSTEMS · AI</p>
+            <p class="hero__text">
+              Media and Interaction Design student interested in digital products, web development, digital systems and user-friendly experiences.
+            </p>
+            <a class="hero__button" href="projects.html">See my projects</a>
+          </div>
 
-<body>
+          <div class="hero__visual" aria-hidden="true">
+            <div class="hero__visual-shape"></div>
+            <div class="collage">
+              <div class="frame frame--large">
+                <div class="frame__bar"></div>
+                <div class="frame__content">
+                  <div class="placeholder placeholder--wide"></div>
+                  <div class="placeholder placeholder--short"></div>
+                </div>
+              </div>
 
-    <header>
-        <h1>Hei, jeg heter [Navnet ditt]</h1>
-        <p>Medie- og interaksjonsdesigner</p>
+              <div class="frame frame--medium">
+                <div class="frame__bar"></div>
+                <div class="frame__content code-view">
+                  <span class="code-line"></span>
+                  <span class="code-line short"></span>
+                  <span class="code-line medium"></span>
+                  <span class="code-line short"></span>
+                </div>
+              </div>
+
+              <div class="frame frame--small">
+                <div class="frame__bar"></div>
+                <div class="frame__content diagram">
+                  <div class="diagram__row">
+                    <span class="diagram__node"></span>
+                    <span class="diagram__node"></span>
+                  </div>
+                  <div class="diagram__row">
+                    <span class="diagram__node"></span>
+                    <span class="diagram__node"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main>
-        <section>
-            <h2>Om meg</h2>
-            <p>
-                Jeg er student/designer med interesse for ...
-            </p>
-        </section>
+      <section id="about" class="section about">
+        <div class="section__wrapper">
+          <div class="about__layout">
+            <div class="about__content">
+              <div class="section__heading">
+                <span>About me</span>
+                <h2>What Drives My Work.</h2>
+              </div>
+              <p>
+                I'm a Media and Interaction Design student interested in the intersection of design and technology. I enjoy exploring how digital products, web experiences and systems can be made more intuitive, useful and engaging.
+              </p>
+            </div>
 
-        <section>
-            <h2>Prosjekter</h2>
+            <aside class="about__photo-wrap">
+              <div>
+                <div class="about__photo">
+                  <img src="images/about-me.jpg" alt="Portrait of Ida Leivdal Øvreberg" />
+                </div>
+                <div class="about__photo-label">Portrait</div>
+              </div>
+            </aside>
+          </div>
 
-            <article>
-                <h3>Prosjekt 1</h3>
-                <p>Kort beskrivelse av prosjektet.</p>
+          <div class="about__cards">
+            <article class="card">
+              <h3>Design & Interaction</h3>
+              <p>I enjoy creating intuitive interfaces and exploring how people interact with digital products.</p>
+            </article>
+            <article class="card">
+              <h3>Web & Technology</h3>
+              <p>I'm interested in web development, programming, databases, and how digital systems work behind the interface.</p>
+            </article>
+            <article class="card">
+              <h3>AI & Exploration</h3>
+              <p>I enjoy experimenting with AI tools and new technologies to explore ideas and develop creative digital solutions.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section projects">
+        <div class="section__wrapper">
+          <div class="section__heading">
+            <span>My projects</span>
+            <h2>Selected work</h2>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card project-card--space-between">
+              <a class="project-card__link" href="space-between.html">
+                <div class="project-card__image">
+                  <img src="images/project-the-space-between.jpg" alt="The Space between" />
+                </div>
+                <div class="project-card__info">
+                  <span class="project-card__category">Game Design</span>
+                  <h3>The Space between</h3>
+                  <p>An interactive game about emotional overwhelm, pacing, and learning to slow down..</p>
+                  <div class="project-card__cta">View project →</div>
+                </div>
+              </a>
             </article>
 
-            <article>
-                <h3>Prosjekt 2</h3>
-                <p>Kort beskrivelse av prosjektet.</p>
+            <article class="project-card project-card--nexai">
+              <a class="project-card__link" href="nexai.html">
+                <div class="project-card__image">
+                  <img src="images/hero-nexai.jpg" alt="Nexai" />
+                </div>
+                <div class="project-card__info">
+                  <span class="project-card__category">Vibe-Coding</span>
+                  <h3>Nexai</h3>
+                  <p>An AI-powered project developed during first semester of the master's program.</p>
+                  <div class="project-card__cta">View project →</div>
+                </div>
+              </a>
             </article>
-        </section>
 
-        <section>
-            <h2>Kontakt</h2>
-            <p>epost@eksempel.no</p>
-        </section>
+            <article class="project-card project-card--magazine-spread">
+              <a class="project-card__link" href="#">
+                <div class="project-card__image project-card__image--placeholder" aria-hidden="true"></div>
+                <div class="project-card__info">
+                  <span class="project-card__category">Editorial</span>
+                  <h3>Magazine Spread</h3>
+                  <p>A magazine layout with soft textures, graceful typography, and a feminine colour palette.</p>
+                  <div class="project-card__cta">View project →</div>
+                </div>
+              </a>
+            </article>
+          </div>
+          <div class="projects__controls">
+            <a class="view-all-projects" href="projects.html">View all projects →</a>
+          </div>
+        </div>
+      </section>
+      
+
+      <section id="background" class="my_background">
+        <div class="section__wrapper">
+          <div class="section__heading">
+            <span>Background</span>
+            <h2>A background in technology and design</h2>
+          </div>
+          <p>
+            With a Bachelor’s degree in Information Science and a current Master’s in Media and Interaction Design, I’ve developed an interest in the space between technology and design. My education has given me experience with web development, digital systems and interaction design, while allowing me to explore how technology can be used creatively.
+          </p>
+
+
+      </section>
     </main>
+      <section id="contact-cta" class="section contact-cta">
+        <div class="section__wrapper">
+          <div class="cta__panel">
+            <h2>LET'S CREATE SOMETHING TOGETHER.</h2>
+            <p>I’m always open to new ideas, collaborations, and opportunities to create meaningful digital experiences.</p>
+            <a class="cta__button" href="mailto:ida.ovreberg@gmail.com">Get in touch →</a>
+            <div class="cta__links">
+              <a href="mailto:ida.ovreberg@gmail.com">ida.ovreberg@gmail.com</a>
+              <a href="https://www.linkedin.com/in/idaovreberg" target="_blank" rel="noopener">LinkedIn</a>
+              <a href="https://github.com/idaovreberg" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </div>
 
-</body>
+      </section>
+
+    <footer class="footer">
+      <p>@Ida Leivdal Øvreberg • Media and Interaction Design</p>
+    </footer>
+  </body>
 </html>
